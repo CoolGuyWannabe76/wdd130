@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 HW</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: yellow;
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        h2 {
+            color: blue;
+            /*margin:0px 0px 0px 100px;*/
+        }
+
+        #ice-heading {
+            color: purple;
+        }
+
+
+        .red-text {
+            color: red;
+        }
+
+        body{
+            margin:0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 50px;
+            
+        }
+
+        .card{
+            background-color: lightgreen;
+            margin: 0 5%; 
+            padding: 1%;
+            border-style: solid;
+            border-radius: 25px;
+            box-shadow: 7px 7px 8px #676767;
+            justify-items: center;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: yellow;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: #676767;
+            text-decoration: none;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="red-text">Elliott Smith WDD 130 HW</h1>
+        <nav>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </nav>
+    </header>
+    <div class="card">
+        <h2 id="ice-heading">In class exercises</h2>
+        <ul>
+            <li>
+                <a class="red-text" href="ice/babies-1st-html.html">Wk 1: HTML basics</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>White Water Rafting</h2>
+        <ul>
+            <li>
+                <a href="wrr/index.html">WWR homepage</a>
+            </li>
+            <li>
+                <a href="wrr/rafting-site-plan.html">WWR site plan</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
